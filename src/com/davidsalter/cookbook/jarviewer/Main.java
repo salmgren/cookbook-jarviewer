@@ -27,7 +27,7 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        LOG.info("Starting application: "+args.length+" arguments.")
+        LOG.info(Level.INFO, "Starting application: {0} arguments.", args.length);
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new MainFrame().setVisible(true);
